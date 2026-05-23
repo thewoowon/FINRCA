@@ -1,0 +1,1 @@
+# FINRCA - FINRCA: Anomaly-Propagation-Aware Lineage Graph for Automated Root Cause Analysis in Financial Risk Pipelines

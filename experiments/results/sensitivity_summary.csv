@@ -1,0 +1,9 @@
+Weight,Baseline,Max|ΔTop-5|,Max|ΔMRR|,Sensitive?
+W1_zscore_blend,0.6,4.3pp,0.046,YES
+W2_var_signal_cap,0.8,0.0pp,0.023,no
+W3_L3_raw,0.55,1.4pp,0.003,no
+W4_L3_excess,0.85,0.0pp,0.022,no
+W5_L3_sl,0.8,0.0pp,0.000,no
+W6_L3_peer,0.9,0.0pp,0.000,no
+W7_L4_raw,0.4,0.0pp,0.045,no
+W8_L4_excess,0.6,1.4pp,0.009,no

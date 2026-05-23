@@ -1,0 +1,196 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand*\HyPL@Entry[1]{}
+\citation{bis2013bcbs239}
+\HyPL@Entry{0<</S/D>>}
+\citation{bis2025review}
+\citation{ecb2024rdarr}
+\citation{pwc2024bcbs}
+\citation{bis2019frtb}
+\citation{bis2019frtb}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{2}{section.1}\protected@file@percent }
+\newlabel{sec:intro}{{1}{2}{Introduction}{section.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.1}The BCBS 239 Compliance Gap}{2}{subsection.1.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{FRTB 2025 raises the stakes further.}{2}{section*.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.2}Motivation}{2}{subsection.1.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.3}Contributions}{2}{subsection.1.3}\protected@file@percent }
+\citation{cheney2009provenance}
+\citation{davidson2008provenance}
+\citation{kim2013monitorrank}
+\citation{wang2018cloudranger}
+\citation{wu2020microrca}
+\citation{wang2021groot}
+\citation{li2022circa}
+\citation{wang2023coral}
+\citation{wang2023reason}
+\citation{zheng2024mulan}
+\citation{yu2023nezha}
+\citation{yao2024chainofevent}
+\citation{chen2024rcacopilot}
+\citation{pham2024baro}
+\citation{xiao2025aerca}
+\citation{pham2025rcaeval}
+\citation{wang2024rcasurvey}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Related Work}{3}{section.2}\protected@file@percent }
+\newlabel{sec:related}{{2}{3}{Related Work}{section.2}{}}
+\@writefile{toc}{\contentsline {paragraph}{Data lineage systems.}{3}{section*.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Root cause analysis.}{3}{section*.3}\protected@file@percent }
+\citation{li2024gnn}
+\citation{assaad2023rootcause}
+\citation{wang2023hierarchical}
+\citation{tong2006rwr}
+\citation{openlineage}
+\@writefile{toc}{\contentsline {paragraph}{Graph-based propagation.}{4}{section*.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{OpenLineage to FRLG schema mapping.}{4}{section*.5}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Field-level mapping from OpenLineage \texttt  {RunEvent} schema to FRLG node and edge schema. \texttt  {*} = inferred from job context; † = populated by SynFRP ground truth in synthetic experiments.}}{4}{table.1}\protected@file@percent }
+\newlabel{tab:openlineage}{{1}{4}{Field-level mapping from OpenLineage \texttt {RunEvent} schema to FRLG node and edge schema. \texttt {*} = inferred from job context; † = populated by SynFRP ground truth in synthetic experiments}{table.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Problem Formulation}{4}{section.3}\protected@file@percent }
+\newlabel{sec:problem}{{3}{4}{Problem Formulation}{section.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Financial Risk Lineage Graph (FRLG)}{4}{subsection.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Edge weight prior $\beta $.}{5}{section*.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Multi-Signal Anomaly Scoring}{5}{subsection.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Rolling z-score (S1).}{5}{section*.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Short-long variance ratio (S2).}{5}{section*.8}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Segment variance (S3).}{5}{section*.9}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Peer deviation with CV normalization (S4).}{5}{section*.10}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Causal excess (S5).}{5}{section*.11}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Layer-aware fusion.}{5}{section*.12}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}RCA Problem}{5}{subsection.3.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Anomaly Transfer Function (ATF) Framework}{5}{subsection.3.4}\protected@file@percent }
+\newlabel{sec:atf}{{3.4}{5}{Anomaly Transfer Function (ATF) Framework}{subsection.3.4}{}}
+\newlabel{eq:rho}{{1}{5}{Anomaly Transfer Function (ATF) Framework}{equation.1}{}}
+\@writefile{toc}{\contentsline {paragraph}{Per-transform derivation.}{5}{section*.13}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Connection to APA-RCA parameters.}{6}{section*.14}\protected@file@percent }
+\newlabel{eq:beta_atf}{{2}{6}{Connection to APA-RCA parameters}{equation.2}{}}
+\newlabel{eq:alpha_atf}{{3}{6}{Connection to APA-RCA parameters}{equation.3}{}}
+\@writefile{toc}{\contentsline {paragraph}{ATF-derived causal excess.}{6}{section*.15}\protected@file@percent }
+\newlabel{eq:excess_atf}{{4}{6}{ATF-derived causal excess}{equation.4}{}}
+\@writefile{toc}{\contentsline {paragraph}{Temporal fraction $\phi _{\rm  peer}$: distribution-free A3/A5 discriminant.}{6}{section*.16}\protected@file@percent }
+\newlabel{eq:phi}{{5}{6}{Temporal fraction $\phi _{\rm peer}$: distribution-free A3/A5 discriminant}{equation.5}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces $\phi _{\rm  peer}$ validation (30 trials each, medium pipeline). A3 (code bug) and A5 (spike propagation) are perfectly separated on both synthetic and real data.}}{6}{table.2}\protected@file@percent }
+\newlabel{tab:phi_validation}{{2}{6}{$\phi _{\rm peer}$ validation (30 trials each, medium pipeline). A3 (code bug) and A5 (spike propagation) are perfectly separated on both synthetic and real data}{table.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}FINRCA System Design}{6}{section.4}\protected@file@percent }
+\newlabel{sec:system}{{4}{6}{FINRCA System Design}{section.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}FRLG Builder}{7}{subsection.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Target Node Selection}{7}{subsection.4.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}APA-RCA Algorithm}{7}{subsection.4.3}\protected@file@percent }
+\newlabel{sec:algorithm}{{4.3}{7}{APA-RCA Algorithm}{subsection.4.3}{}}
+\newlabel{eq:wgraph}{{8}{7}{APA-RCA Algorithm}{equation.8}{}}
+\newlabel{eq:betaeff}{{9}{7}{APA-RCA Algorithm}{equation.9}{}}
+\@writefile{toc}{\contentsline {paragraph}{Complexity.}{8}{section*.17}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Relationship to standard RWR.}{8}{section*.18}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5}SynFRP Benchmark}{8}{section.5}\protected@file@percent }
+\newlabel{sec:benchmark}{{5}{8}{SynFRP Benchmark}{section.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Design}{8}{subsection.5.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Pipeline Topology}{8}{subsection.5.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces SynFRP size configurations.}}{8}{table.3}\protected@file@percent }
+\newlabel{tab:sizes}{{3}{8}{SynFRP size configurations}{table.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Anomaly Types}{8}{subsection.5.3}\protected@file@percent }
+\citation{ecb2024rdarr}
+\citation{bis2013bcbs239}
+\citation{pwc2024bcbs}
+\citation{wu2020microrca}
+\citation{spirtes2000causation}
+\@writefile{toc}{\contentsline {paragraph}{Industry precedent for A5--A7.}{9}{section*.19}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Industry precedent for new SynFRP anomaly types A5--A7.}}{9}{table.4}\protected@file@percent }
+\newlabel{tab:precedent}{{4}{9}{Industry precedent for new SynFRP anomaly types A5--A7}{table.4}{}}
+\@writefile{toc}{\contentsline {paragraph}{Experimental design.}{9}{section*.20}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6}Experiments}{9}{section.6}\protected@file@percent }
+\newlabel{sec:experiments}{{6}{9}{Experiments}{section.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}Setup}{9}{subsection.6.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}Main Results}{9}{subsection.6.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{APA-RCA v2: adaptive weighting.}{9}{section*.21}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Main results (630 runs across all 7 anomaly types and 3 pipeline sizes, 30 trials each). Best result in \textbf  {bold}.}}{10}{table.5}\protected@file@percent }
+\newlabel{tab:main}{{5}{10}{Main results (630 runs across all 7 anomaly types and 3 pipeline sizes, 30 trials each). Best result in \textbf {bold}}{table.5}{}}
+\@writefile{toc}{\contentsline {paragraph}{Structural-RWR and PC+RWR.}{10}{section*.22}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Anomaly-Score Only baseline analysis.}{10}{section*.23}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{New scenarios (A5--A7) validate graph-guided RCA.}{10}{section*.24}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Top-5 accuracy by anomaly type (medium pipeline, 30 trials each). A5=Downstream Masking, A6=Multi-Source Ambiguity, A7=Coincidental Anomaly. SC=Schema-Constraint used for A4 in Hybrid row.}}{10}{table.6}\protected@file@percent }
+\newlabel{tab:bytype}{{6}{10}{Top-5 accuracy by anomaly type (medium pipeline, 30 trials each). A5=Downstream Masking, A6=Multi-Source Ambiguity, A7=Coincidental Anomaly. SC=Schema-Constraint used for A4 in Hybrid row}{table.6}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Top-5 accuracy by anomaly type and method (medium pipeline, 30 trials each). \textsc  {APA-RCA}{} v2 achieves 100\% on A1, A2, A6, A7; A3=90\%, A5=86.7\%. Hybrid adds A4=100\% via Schema-Constraint.}}{11}{figure.1}\protected@file@percent }
+\newlabel{fig:fig1}{{1}{11}{Top-5 accuracy by anomaly type and method (medium pipeline, 30 trials each). \aparca {} v2 achieves 100\% on A1, A2, A6, A7; A3=90\%, A5=86.7\%. Hybrid adds A4=100\% via Schema-Constraint}{figure.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3}Ablation Study}{11}{subsection.6.3}\protected@file@percent }
+\newlabel{sec:ablation}{{6.3}{11}{Ablation Study}{subsection.6.3}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces \textsc  {APA-RCA}{} v2 component ablation (medium pipeline, 210 runs per variant, 30 trials $\times $ 7 types). Adaptive weighting = Eq.~\ref {eq:wgraph}; Score-inv $\beta $ = Eq.~\ref {eq:betaeff}; Ancestor constraint = $0.05\times $ penalty for non-ancestors.}}{11}{table.7}\protected@file@percent }
+\newlabel{tab:ablation_v2}{{7}{11}{\aparca {} v2 component ablation (medium pipeline, 210 runs per variant, 30 trials $\times $ 7 types). Adaptive weighting = Eq.~\ref {eq:wgraph}; Score-inv $\beta $ = Eq.~\ref {eq:betaeff}; Ancestor constraint = $0.05\times $ penalty for non-ancestors}{table.7}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {8}{\ignorespaces \textsc  {APA-RCA}{} v1 component ablation (medium pipeline, 210 runs per variant, 30 trials $\times $ 7 types). $\text  {$\mathsurround \z@ \mathchar "458$}$/$\times $ indicate component presence/absence.}}{11}{table.8}\protected@file@percent }
+\newlabel{tab:ablation}{{8}{11}{\aparca {} v1 component ablation (medium pipeline, 210 runs per variant, 30 trials $\times $ 7 types). $\checkmark $/$\times $ indicate component presence/absence}{table.8}{}}
+\citation{ecb2024rdarr}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Ablation study: (a) Top-K accuracy and (b) MRR by variant. Removing anomaly scores (rightmost bars) catastrophically degrades performance; adaptive weighting is the primary v2 driver.}}{12}{figure.2}\protected@file@percent }
+\newlabel{fig:fig2}{{2}{12}{Ablation study: (a) Top-K accuracy and (b) MRR by variant. Removing anomaly scores (rightmost bars) catastrophically degrades performance; adaptive weighting is the primary v2 driver}{figure.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.4}Scalability Analysis}{12}{subsection.6.4}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {9}{\ignorespaces Scalability analysis (\textsc  {APA-RCA}{} v2, 90 runs per size, all 7 anomaly types).}}{12}{table.9}\protected@file@percent }
+\newlabel{tab:scalability}{{9}{12}{Scalability analysis (\aparca {} v2, 90 runs per size, all 7 anomaly types)}{table.9}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {10}{\ignorespaces RCA query latency at large-scale pipeline configurations (\textsc  {APA-RCA}{} v2, A1 anomaly type, 3 trials each). Latency measures only the RCA graph walk---pipeline execution and anomaly detection are excluded. $^\dagger $Elevated latency for Small reflects first-run Python/NumPy JIT warmup; repeated measurements yield sub-1\,ms consistent with Medium.}}{12}{table.10}\protected@file@percent }
+\newlabel{tab:largescale}{{10}{12}{RCA query latency at large-scale pipeline configurations (\aparca {} v2, A1 anomaly type, 3 trials each). Latency measures only the RCA graph walk---pipeline execution and anomaly detection are excluded. $^\dagger $Elevated latency for Small reflects first-run Python/NumPy JIT warmup; repeated measurements yield sub-1\,ms consistent with Medium}{table.10}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Scalability analysis (\textsc  {APA-RCA}{} v2, 90 runs per size, all 7 anomaly types): (a)~Top-5 accuracy (72.4--82.4\%) varies by pipeline size (peer group size effect); (b)~query latency scales sub-linearly, remaining below the 2\,ms SLA for all benchmark configurations.}}{13}{figure.3}\protected@file@percent }
+\newlabel{fig:fig3}{{3}{13}{Scalability analysis (\aparca {} v2, 90 runs per size, all 7 anomaly types): (a)~Top-5 accuracy (72.4--82.4\%) varies by pipeline size (peer group size effect); (b)~query latency scales sub-linearly, remaining below the 2\,ms SLA for all benchmark configurations}{figure.3}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {11}{\ignorespaces Mean Time to Diagnose (MTTD) by method (210 runs, all sizes).}}{13}{table.11}\protected@file@percent }
+\newlabel{tab:mttd}{{11}{13}{Mean Time to Diagnose (MTTD) by method (210 runs, all sizes)}{table.11}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.5}Error Analysis}{13}{subsection.6.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.6}Schema-Constraint RCA for Aggregation Errors (A4)}{14}{subsection.6.6}\protected@file@percent }
+\newlabel{sec:schema_constraint}{{6.6}{14}{Schema-Constraint RCA for Aggregation Errors (A4)}{subsection.6.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.7}Real-Source Hybrid Benchmark}{14}{subsection.6.7}\protected@file@percent }
+\newlabel{sec:rshb}{{6.7}{14}{Real-Source Hybrid Benchmark}{subsection.6.7}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {12}{\ignorespaces Real-Source Hybrid Benchmark (RSHB) results. Source layer: 10 US equities + 2 KRX + 3 FX + 3 rates (Yahoo Finance); 756 trading days, three market regimes. Pipeline logic and injection unchanged (210 runs, medium pipeline).}}{14}{table.12}\protected@file@percent }
+\newlabel{tab:rshb}{{12}{14}{Real-Source Hybrid Benchmark (RSHB) results. Source layer: 10 US equities + 2 KRX + 3 FX + 3 rates (Yahoo Finance); 756 trading days, three market regimes. Pipeline logic and injection unchanged (210 runs, medium pipeline)}{table.12}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.8}ML-Enhanced Pipeline: VAE Anomaly Scorer and GNN Re-ranker}{15}{subsection.6.8}\protected@file@percent }
+\newlabel{sec:ml_enhancement}{{6.8}{15}{ML-Enhanced Pipeline: VAE Anomaly Scorer and GNN Re-ranker}{subsection.6.8}{}}
+\@writefile{toc}{\contentsline {paragraph}{VAE Anomaly Scorer.}{15}{section*.25}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{GNN Re-ranker.}{15}{section*.26}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Evaluation protocol.}{15}{section*.27}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Results.}{15}{section*.28}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {13}{\ignorespaces ML-Enhanced Pipeline results. \emph  {Synthetic}: 5-fold CV (630 trials). \emph  {RSHB}: GNN trained on all 630 synthetic trials, tested on 210 real-source trials (cross-domain transfer, no fine-tuning).}}{16}{table.13}\protected@file@percent }
+\newlabel{tab:ml}{{13}{16}{ML-Enhanced Pipeline results. \emph {Synthetic}: 5-fold CV (630 trials). \emph {RSHB}: GNN trained on all 630 synthetic trials, tested on 210 real-source trials (cross-domain transfer, no fine-tuning)}{table.13}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.9}Signal Weight Sensitivity Analysis}{16}{subsection.6.9}\protected@file@percent }
+\newlabel{sec:sensitivity}{{6.9}{16}{Signal Weight Sensitivity Analysis}{subsection.6.9}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {14}{\ignorespaces One-at-a-time sensitivity analysis of fusion weights ($\pm $30\% perturbation). Max$|\Delta |$ is the largest absolute deviation from baseline across all five scale factors. A weight is ``sensitive'' if Max$|\Delta \text  {Top-5}|>3$\,pp. }}{16}{table.14}\protected@file@percent }
+\newlabel{tab:sensitivity}{{14}{16}{One-at-a-time sensitivity analysis of fusion weights ($\pm $30\% perturbation). Max$|\Delta |$ is the largest absolute deviation from baseline across all five scale factors. A weight is ``sensitive'' if Max$|\Delta \text {Top-5}|>3$\,pp}{table.14}{}}
+\@writefile{toc}{\contentsline {paragraph}{Results.}{16}{section*.29}\protected@file@percent }
+\citation{chen2024rcacopilot}
+\@writefile{toc}{\contentsline {paragraph}{Conclusion.}{17}{section*.30}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {7}Discussion}{17}{section.7}\protected@file@percent }
+\newlabel{sec:discussion}{{7}{17}{Discussion}{section.7}{}}
+\@writefile{toc}{\contentsline {paragraph}{Practical implications.}{17}{section*.31}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{A3 and layer-conditional method selection.}{17}{section*.32}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Transform weight calibration.}{17}{section*.33}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Limitations.}{17}{section*.34}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Future work.}{17}{section*.35}\protected@file@percent }
+\bibstyle{plainnat}
+\bibdata{refs}
+\bibcite{assaad2023rootcause}{{1}{2023}{{Assaad et~al.}}{{}}}
+\bibcite{bis2025review}{{2}{2025}{{Bank for International Settlements}}{{}}}
+\bibcite{bis2013bcbs239}{{3}{2013}{{Basel Committee on Banking Supervision}}{{}}}
+\bibcite{bis2019frtb}{{4}{2019}{{Basel Committee on Banking Supervision}}{{}}}
+\bibcite{chen2024rcacopilot}{{5}{2024}{{Chen et~al.}}{{}}}
+\bibcite{cheney2009provenance}{{6}{2009}{{Cheney et~al.}}{{Cheney, Chiticariu, and Tan}}}
+\bibcite{davidson2008provenance}{{7}{2008}{{Davidson and Freire}}{{}}}
+\bibcite{ecb2024rdarr}{{8}{2024}{{European Central Bank}}{{}}}
+\bibcite{kim2013monitorrank}{{9}{2013}{{Kim et~al.}}{{}}}
+\bibcite{li2022circa}{{10}{2022}{{Li et~al.}}{{}}}
+\bibcite{li2024gnn}{{11}{2024}{{Li et~al.}}{{}}}
+\@writefile{toc}{\contentsline {section}{\numberline {8}Conclusion}{18}{section.8}\protected@file@percent }
+\newlabel{sec:conclusion}{{8}{18}{Conclusion}{section.8}{}}
+\bibcite{openlineage}{{12}{2024}{{OpenLineage Community}}{{}}}
+\bibcite{pham2024baro}{{13}{2024}{{Pham et~al.}}{{}}}
+\bibcite{pham2025rcaeval}{{14}{2025}{{Pham et~al.}}{{}}}
+\bibcite{pwc2024bcbs}{{15}{2024}{{PricewaterhouseCoopers}}{{}}}
+\bibcite{tong2006rwr}{{16}{2006}{{Tong et~al.}}{{Tong, Faloutsos, and Pan}}}
+\bibcite{wang2023hierarchical}{{17}{2023{a}}{{Wang et~al.}}{{}}}
+\bibcite{wang2023coral}{{18}{2023{b}}{{Wang et~al.}}{{}}}
+\bibcite{wang2023reason}{{19}{2023{c}}{{Wang et~al.}}{{}}}
+\bibcite{wang2021groot}{{20}{2021}{{Wang et~al.}}{{}}}
+\bibcite{wang2024rcasurvey}{{21}{2024}{{Wang and Qi}}{{}}}
+\bibcite{wang2018cloudranger}{{22}{2018}{{Wang et~al.}}{{}}}
+\bibcite{wu2020microrca}{{23}{2020}{{Wu et~al.}}{{}}}
+\bibcite{xiao2025aerca}{{24}{2025}{{Xiao et~al.}}{{}}}
+\bibcite{yao2024chainofevent}{{25}{2024}{{Yao et~al.}}{{}}}
+\bibcite{yu2023nezha}{{26}{2023}{{Yu et~al.}}{{}}}
+\bibcite{zheng2024mulan}{{27}{2024}{{Zheng et~al.}}{{}}}
+\@writefile{lot}{\contentsline {table}{\numberline {15}{\ignorespaces Representative nodes of the medium SynFRP configuration (63 nodes total).}}{20}{table.15}\protected@file@percent }
+\newlabel{tab:catalog}{{15}{20}{Representative nodes of the medium SynFRP configuration (63 nodes total)}{table.15}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {A}SynFRP Node Catalog (Medium Configuration)}{20}{appendix.A}\protected@file@percent }
+\newlabel{app:catalog}{{A}{20}{SynFRP Node Catalog (Medium Configuration)}{appendix.A}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {B}APA-RCA Pseudocode}{20}{appendix.B}\protected@file@percent }
+\newlabel{app:pseudocode}{{B}{20}{APA-RCA Pseudocode}{appendix.B}{}}
+\gdef \@abspage@last{21}

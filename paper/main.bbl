@@ -1,0 +1,182 @@
+\begin{thebibliography}{27}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Assaad et~al.(2023)]{assaad2023rootcause}
+Charles~K. Assaad et~al.
+\newblock Root cause identification for collective anomalies in time series
+  given an acyclic summary causal graph.
+\newblock \emph{arXiv preprint arXiv:2206.13390}, 2023.
+
+\bibitem[{Bank for International Settlements}(2025)]{bis2025review}
+{Bank for International Settlements}.
+\newblock Implementation of {BCBS} 239 principles: Progress report.
+\newblock Technical Report~36, BIS, 2025.
+
+\bibitem[{Basel Committee on Banking Supervision}(2013)]{bis2013bcbs239}
+{Basel Committee on Banking Supervision}.
+\newblock Principles for effective risk data aggregation and risk reporting.
+\newblock Technical Report BCBS 239, Bank for International Settlements, 2013.
+\newblock URL \url{https://www.bis.org/publ/bcbs239.htm}.
+
+\bibitem[{Basel Committee on Banking Supervision}(2019)]{bis2019frtb}
+{Basel Committee on Banking Supervision}.
+\newblock Minimum capital requirements for market risk.
+\newblock Technical report, Bank for International Settlements, 2019.
+\newblock URL \url{https://www.bis.org/bcbs/publ/d457.htm}.
+\newblock Fundamental Review of the Trading Book (FRTB); revised January 2019,
+  G-SIB implementation from January 2025.
+
+\bibitem[Chen et~al.(2024)]{chen2024rcacopilot}
+Yong Chen et~al.
+\newblock {RCACopilot}: On-call incident root cause analysis via {LLM} for
+  online service systems.
+\newblock In \emph{Proceedings of the 19th European Conference on Computer
+  Systems (EuroSys)}, 2024.
+
+\bibitem[Cheney et~al.(2009)Cheney, Chiticariu, and Tan]{cheney2009provenance}
+James Cheney, Laura Chiticariu, and Wang-Chiew Tan.
+\newblock Provenance in databases: Why, how, and where.
+\newblock \emph{Foundations and Trends in Databases}, 1\penalty0 (4):\penalty0
+  379--474, 2009.
+
+\bibitem[Davidson and Freire(2008)]{davidson2008provenance}
+Susan~B. Davidson and Juliana Freire.
+\newblock Provenance and scientific workflows: Challenges and opportunities.
+\newblock In \emph{Proceedings of the 2008 ACM SIGMOD International Conference
+  on Management of Data}, pages 1345--1350, 2008.
+
+\bibitem[{European Central Bank}(2024)]{ecb2024rdarr}
+{European Central Bank}.
+\newblock Guide on effective risk data aggregation and risk reporting
+  ({RDARR}).
+\newblock Technical report, ECB, May 2024.
+
+\bibitem[Kim et~al.(2013)]{kim2013monitorrank}
+Myunghwan Kim et~al.
+\newblock Root cause detection in a service-oriented architecture.
+\newblock In \emph{Proceedings of the {ACM SIGMETRICS/Performance} Joint
+  International Conference on Measurement and Modeling of Computer Systems},
+  2013.
+
+\bibitem[Li et~al.(2022)]{li2022circa}
+Mingjie Li et~al.
+\newblock {CIRCA}: Causal inference-based root cause analysis for online
+  service systems.
+\newblock In \emph{Proceedings of the 28th {ACM SIGKDD} Conference on Knowledge
+  Discovery and Data Mining ({KDD})}, 2022.
+
+\bibitem[Li et~al.(2024)]{li2024gnn}
+Rui Li et~al.
+\newblock Root cause localization for data quality anomalies via graph neural
+  networks.
+\newblock In \emph{Proceedings of the VLDB Endowment}, volume~17, 2024.
+
+\bibitem[{OpenLineage Community}(2024)]{openlineage}
+{OpenLineage Community}.
+\newblock {OpenLineage}: An open standard for data lineage.
+\newblock \url{https://openlineage.io}, 2024.
+\newblock Accessed: 2024.
+
+\bibitem[Pham et~al.(2024)]{pham2024baro}
+Long Pham et~al.
+\newblock {BARO}: Robust root cause analysis for microservices via multivariate
+  bayesian online change point detection.
+\newblock In \emph{Proceedings of the ACM International Conference on the
+  Foundations of Software Engineering (FSE)}, 2024.
+
+\bibitem[Pham et~al.(2025)]{pham2025rcaeval}
+Long Pham et~al.
+\newblock {RCAEval}: A comprehensive benchmark for root cause analysis in
+  microservice systems.
+\newblock In \emph{Proceedings of The Web Conference (WWW)}, 2025.
+
+\bibitem[{PricewaterhouseCoopers}(2024)]{pwc2024bcbs}
+{PricewaterhouseCoopers}.
+\newblock {BCBS} 239: Where do {G-SIBs} stand in 2024?
+\newblock Technical report, PwC Financial Services Risk Practice, 2024.
+
+\bibitem[Tong et~al.(2006)Tong, Faloutsos, and Pan]{tong2006rwr}
+Hanghang Tong, Christos Faloutsos, and Jia-Yu Pan.
+\newblock Fast random walk with restart and its applications.
+\newblock In \emph{Proceedings of the 6th International Conference on Data
+  Mining (ICDM)}, pages 613--622, 2006.
+
+\bibitem[Wang et~al.(2023{\natexlab{a}})]{wang2023hierarchical}
+Dan Wang et~al.
+\newblock Hierarchical graph neural networks for interdependent causal
+  discovery and root cause analysis in complex systems.
+\newblock \emph{arXiv preprint arXiv:2307.12637}, 2023{\natexlab{a}}.
+
+\bibitem[Wang et~al.(2023{\natexlab{b}})]{wang2023coral}
+Donghui Wang et~al.
+\newblock {CORAL}: Causal discovery via conditional mutual information for
+  microservice root cause analysis.
+\newblock In \emph{Proceedings of the 29th ACM SIGKDD Conference on Knowledge
+  Discovery and Data Mining (KDD)}, 2023{\natexlab{b}}.
+
+\bibitem[Wang et~al.(2023{\natexlab{c}})]{wang2023reason}
+Donghui Wang et~al.
+\newblock {REASON}: Towards providing actionable root cause analysis for
+  hierarchical microservices via incremental graph neural network.
+\newblock In \emph{Proceedings of the 29th {ACM SIGKDD} Conference on Knowledge
+  Discovery and Data Mining ({KDD})}, 2023{\natexlab{c}}.
+
+\bibitem[Wang et~al.(2021)]{wang2021groot}
+Hanzhang Wang et~al.
+\newblock {Groot}: An event-graph-based approach for root cause analysis in
+  industrial settings.
+\newblock In \emph{Proceedings of the 36th {IEEE/ACM} International Conference
+  on Automated Software Engineering ({ASE})}, 2021.
+
+\bibitem[Wang and Qi(2024)]{wang2024rcasurvey}
+Pengfei Wang and Jiacheng Qi.
+\newblock A comprehensive survey on root cause analysis in {(Micro)} services.
+\newblock \emph{arXiv preprint arXiv:2408.00803}, 2024.
+
+\bibitem[Wang et~al.(2018)]{wang2018cloudranger}
+Pengfei Wang et~al.
+\newblock {CloudRanger}: Root cause identification for cloud native systems.
+\newblock In \emph{Proceedings of the 18th {IEEE/ACM} International Symposium
+  on Cluster, Cloud and Grid Computing ({CCGrid})}, 2018.
+
+\bibitem[Wu et~al.(2020)]{wu2020microrca}
+Li~Wu et~al.
+\newblock {MicroRCA}: Root cause localization of performance issues in
+  microservices.
+\newblock In \emph{Proceedings of the {IEEE/IFIP} Network Operations and
+  Management Symposium ({NOMS})}, 2020.
+
+\bibitem[Xiao et~al.(2025)]{xiao2025aerca}
+Han Xiao et~al.
+\newblock {AERCA}: Anomaly-aware root cause analysis via granger causal
+  discovery from anomalous time series.
+\newblock In \emph{Proceedings of the 13th International Conference on Learning
+  Representations ({ICLR})}, 2025.
+\newblock Oral.
+
+\bibitem[Yao et~al.(2024)]{yao2024chainofevent}
+Zhuoyang Yao et~al.
+\newblock Chain-of-event: Interpretable root cause analysis for microservices
+  via events in deployment history.
+\newblock In \emph{Companion Proceedings of the 32nd {ACM} International
+  Conference on the Foundations of Software Engineering ({FSE})}, 2024.
+
+\bibitem[Yu et~al.(2023)]{yu2023nezha}
+Guangba Yu et~al.
+\newblock {Nezha}: Interpretable fine-grained root causes analysis for
+  microservices via multi-modal observability data.
+\newblock In \emph{Proceedings of the 31st {ACM} Joint European Software
+  Engineering Conference and Symposium on the Foundations of Software
+  Engineering ({ESEC/FSE})}, 2023.
+
+\bibitem[Zheng et~al.(2024)]{zheng2024mulan}
+Lecheng Zheng et~al.
+\newblock {MULAN}: Multi-modal causal structure learning and root cause
+  analysis for microservices.
+\newblock In \emph{Proceedings of the {ACM} Web Conference ({WWW})}, 2024.
+
+\end{thebibliography}
