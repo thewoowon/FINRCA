@@ -516,11 +516,11 @@ def _run_single_with_scores(
     if vae_scorer is not None and vae_scores is not None:
         try:
             rca_vae = apa_engine.run(G, vae_scores, observed_target)
-            rca_vae.method = "VAE+APA-RCA"
+            rca_vae.method = "CVAE+APA-RCA"
             metrics_vae = compute_run_metrics(
                 result=rca_vae, true_root_cause=gt.target_node_id,
                 anomaly_type=anomaly_type.value, pipeline_size=pipeline_size,
-                trial=trial, method_name="VAE+APA-RCA",
+                trial=trial, method_name="CVAE+APA-RCA",
             )
             sample_vae = build_gnn_sample(
                 G=G, scores=vae_scores, rca_result=rca_vae,
@@ -642,19 +642,19 @@ def run_ml_enhanced_experiments(output_dir: str = "results") -> ExperimentResult
         z_rr = GNNReranker(top_k=10, hidden_dim=32, dropout=0.3, epochs=120)
         z_rr.fit(z_train, verbose=False)
         print(f"  Fold {fold+1}/{N_FOLDS}: z-GNN  trained={len(z_train)}, test={len(z_test)}")
-        _eval_fold(z_test, z_rr, "APA-RCA-v2+GNN")
+        _eval_fold(z_test, z_rr, "APA-RCA-v2+ResGCN")
 
-        # VAE GNN fold
+        # C-VAE + ResGCN fold
         vae_train = [s for s in vae_samples if s.fold != fold]
         vae_test  = [s for s in vae_samples if s.fold == fold]
         vae_rr = GNNReranker(top_k=10, hidden_dim=32, dropout=0.3, epochs=120)
         vae_rr.fit(vae_train, verbose=False)
-        print(f"  Fold {fold+1}/{N_FOLDS}: VAE-GNN trained={len(vae_train)}, test={len(vae_test)}")
-        _eval_fold(vae_test, vae_rr, "VAE+APA-RCA+GNN")
+        print(f"  Fold {fold+1}/{N_FOLDS}: CVAE-ResGCN trained={len(vae_train)}, test={len(vae_test)}")
+        _eval_fold(vae_test, vae_rr, "CVAE+APA-RCA+ResGCN")
 
     # ── Phase 4: Train on all synthetic → test on RSHB ───────────────────────
     print(f"\n{'='*60}")
-    print("Phase 4: RSHB evaluation — APA-RCA-v2+GNN and VAE+APA-RCA+GNN")
+    print("Phase 4: RSHB evaluation — APA-RCA-v2+ResGCN and CVAE+APA-RCA+ResGCN")
     print(f"{'='*60}")
 
     z_final   = GNNReranker(top_k=10, hidden_dim=32, dropout=0.3, epochs=150)
@@ -725,7 +725,7 @@ def run_ml_enhanced_experiments(output_dir: str = "results") -> ExperimentResult
                             m = compute_run_metrics(
                                 result=reranked_z, true_root_cause=gt.target_node_id,
                                 anomaly_type=atype.value, pipeline_size="medium_real",
-                                trial=trial, method_name="APA-RCA-v2+GNN",
+                                trial=trial, method_name="APA-RCA-v2+ResGCN",
                             )
                             results.add(m)
                     except Exception as e:
@@ -736,7 +736,7 @@ def run_ml_enhanced_experiments(output_dir: str = "results") -> ExperimentResult
                     obs_vae = select_target_node(G, vae_scores, threshold=0.1)
                     try:
                         rca_vae = apa_engine.run(G, vae_scores, obs_vae)
-                        rca_vae.method = "VAE+APA-RCA"
+                        rca_vae.method = "CVAE+APA-RCA"
                         sample_vae = build_gnn_sample(
                             G=G, scores=vae_scores, rca_result=rca_vae,
                             true_rc=gt.target_node_id, top_k=10,
@@ -745,8 +745,8 @@ def run_ml_enhanced_experiments(output_dir: str = "results") -> ExperimentResult
                         )
                         if sample_vae is not None:
                             reranked_vae = vae_final.rerank(sample_vae, rca_vae)
-                            for mname, res in [("VAE+APA-RCA", rca_vae),
-                                               ("VAE+APA-RCA+GNN", reranked_vae)]:
+                            for mname, res in [("CVAE+APA-RCA", rca_vae),
+                                               ("CVAE+APA-RCA+ResGCN", reranked_vae)]:
                                 res.method = mname
                                 m = compute_run_metrics(
                                     result=res, true_root_cause=gt.target_node_id,
@@ -760,7 +760,7 @@ def run_ml_enhanced_experiments(output_dir: str = "results") -> ExperimentResult
                     pbar.update(1)
 
     # ── Save & summarise ─────────────────────────────────────────────────────
-    out_path = os.path.join(output_dir, "ml_enhanced_results.csv")
+    out_path = os.path.join(output_dir, "ml_enhanced_v2_results.csv")
     results.save(out_path)
 
     print(f"\n{'='*60}")
